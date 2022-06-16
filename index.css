@@ -21,7 +21,9 @@ html {
     font-size: 3em;
   }
   strong {
-    background-color: rgb(240, 157, 226);
+    background-color: rgb(255, 255, 255);
+    border:rgb(228, 59, 200);;
+    border-style: none;
     font-size: 1.5em;
   }
   p {
