@@ -18,7 +18,7 @@ function hantei() {
     // 課題3-1：ここの判定処理を作成する．
     kaisu = kaisu+1;
     console.log(kaisu+'回目の予想：'+yoso);
-
+if(end < 1) {
     if (kaisu < 3) {
         if (kotae === yoso) {
             console.log('正解です．おめでとう!');
@@ -29,6 +29,9 @@ function hantei() {
             console.log('まちがい．答えはもっと小さいですよ');
         }
     } else {
+        console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
+    }
+}  else {
         console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
     }
     //        ページに表示する方法はまだ習っていないので
