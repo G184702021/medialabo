@@ -38,5 +38,16 @@ for (let o of oceans) {
     li.textContent = o;
     ul.insertAdjacentElement('beforeend',li);
 }
+//CSSの設定
+//let h1 = document.querySelector('h1');
+//h1.style.color = 'blue';
+//h1.style.fontSize = '10pt';
 
-
+// すべての h2 要素を検索する（次の行を完成させる）
+//let h2s = document.querySelector('h2');
+//for (let h2 of h2s) {
+    //h2s.style.backgroundColor = 'palegreen';
+    // h2 の背景色を 'palegreen' に変更する
+    //   (次の行を書く)
+  
+  //}
