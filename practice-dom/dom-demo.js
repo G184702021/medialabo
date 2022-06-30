@@ -44,10 +44,10 @@ for (let o of oceans) {
 //h1.style.fontSize = '10pt';
 
 // すべての h2 要素を検索する（次の行を完成させる）
-//let h2s = document.querySelector('h2');
-//for (let h2 of h2s) {
-    //h2s.style.backgroundColor = 'palegreen';
-    // h2 の背景色を 'palegreen' に変更する
-    //   (次の行を書く)
-  
-  //}
+let h2s = document.querySelector('h2');
+h2s.style.backgroundColor = 'palegreen';
+
+let ls = document.querySelectorAll('li');
+for (let li of ls) {
+    li.classList.add('orangeUnderline');
+  }
