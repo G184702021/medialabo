@@ -19,10 +19,6 @@ result = document.createElement('result');
     // 課題3-1：ここの判定処理を作成する．
     kaisu = kaisu+1;
     console.log(kaisu+'回目の予想：'+yoso);
-<<<<<<< HEAD
-    if (end === 1 || kaisu > 4) {
-        console.log('答えは '+kotae+' でした．すでにゲームは終わっています');
-=======
 if(end < 1) {
     if (kaisu < 3) {
         if (kotae === yoso) {
@@ -43,7 +39,6 @@ if(end < 1) {
 }  else {
         console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
         result.textContent = '答えは'+kotae+'でした．すでにゲームは終わっています';
->>>>>>> 87a0a0bfeddade1049161a326dce9a3bc0cce689
     }
 
     if (end < 1 && kaisu < 3) {
