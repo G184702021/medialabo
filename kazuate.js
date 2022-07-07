@@ -40,6 +40,19 @@ if(end < 1) {
         console.log('答えは'+kotae+'でした．すでにゲームは終わっています');
         result.textContent = '答えは'+kotae+'でした．すでにゲームは終わっています';
     }
+
+    if (end < 1 && kaisu < 3) {
+            if (kotae === yoso) {
+                console.log('正解です．おめでとう!');
+                end++;
+            } else if (yoso < kotae) {
+                console.log('まちがい．答えはもっと大きいですよ');
+            } else if (yoso > kotae){
+                console.log('まちがい．答えはもっと小さいですよ');
+            } else if (kaisu === 3){
+                console.log('まちがい．答えは '+kotae+' です');
+            }
+        }
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
     p.insertAdjacentElement('beforeend', result);
