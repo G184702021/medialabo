@@ -3,7 +3,7 @@ let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え: ' + kotae);      // デバッグ用
 
 // 入力回数（予想回数）
-let kaisu = 0;
+let kaisu = 1;
 
 // 予想を4回実行する
 let b = document.querySelector('#print');
@@ -15,7 +15,11 @@ let i = document.querySelector('input[name="shimei"]');
 let yoso = i.value;
 let p = document.querySelector('p#result');
 let result;
+let answer;
 result = document.createElement('result');
+answer = document.createElement('answer');
+
+answer.textContent = kaisu+'回目の予想：'+yoso;
 
     let end = 0;       // 第5回課題:テキストボックスの数値をここに代入
     // 課題3-1：ここの判定処理を作成する．
@@ -57,5 +61,6 @@ if(end < 1) {
         }
     //        ページに表示する方法はまだ習っていないので
     //        判定結果はコンソールに出力すること
+    p.insertAdjacentElement('beforeend', answer);
     p.insertAdjacentElement('beforeend', result);
 }
