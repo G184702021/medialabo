@@ -29,6 +29,7 @@ function sendRequest() {
 		//let p9 = document.querySelector('p#subgenre.name');
 
 
+		//p1.textContent = data.results.shop[0].access;
 		p1.textContent = access;
 		p2.textContent = address;
 		//p3.textContent = budget.name;
@@ -38,7 +39,7 @@ function sendRequest() {
 		//p7.textContent = ope;
 		//p8.textContent = station_name;
 		//p9.textContent = subgenre.name;
-		console.log(Array[3]);
+		
 }
 
 // 通信が成功した時の処理
@@ -57,6 +58,7 @@ function showResult(resp) {
 	// data.x を出力
 	console.log(data.x);
 
+	console.log(data.results.shop[0].access);
 }
 
 // 通信エラーが発生した時の処理
