@@ -8,9 +8,15 @@ html {
   body {
     width: 80em;
     margin: 0 auto;
-    background-image:url("https://woman-gourmet.com/wp-content/uploads/2020/09/67401020_464411737681238_7801512723988086784_o.jpg");
+    background-color: rgb(226, 241, 255);
+    background-image:url("https://woman-gourmet.com/wp-content/uploads/2020/09/67401020_464411737681238_7801512723988086784_o.jpg"),
+    url("https://woman-gourmet.com/wp-content/uploads/2020/09/67401020_464411737681238_7801512723988086784_o.jpg");
+    background-size: 40em,40em;
+    background-repeat:  no-repeat,no-repeat;
+    background-position:right center,left center;
+    
   }
-  
+    
   /* Typography */
   
 
@@ -30,7 +36,7 @@ html {
   /*+++ more specific section styles +++*/
   
   /* header and footer */
-  
+
   header, footer {
     background-color: rgb(222, 224, 140);
     height: 10em;
