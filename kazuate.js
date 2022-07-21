@@ -11,7 +11,7 @@ b.addEventListener('click', hantei);
 // 将来: ボタンを押したら， hantei() を呼び出すように修正する
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
-let i = document.querySelector('input[name="shimei"]');
+let i = document.querySelector('input[name="kaitou"]');
 let yoso = i.value;
 let p1 = document.querySelector('p#answer');
 let p2 = document.querySelector('p#result');
