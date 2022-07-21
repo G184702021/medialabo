@@ -26,10 +26,15 @@ html {
     font-size: 1.5em;
   }
   p {
+    background-color: rgb(255, 255, 255);
     font-size: 1.5em;
   }
   
   li {
+    width: 80%;
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: rgb(255, 255, 255);
     font-size: 1.5em;
   }
   
