@@ -1,6 +1,7 @@
 let students = [
     {face:"taro.png", name:"拓殖太郎"},
     {face:"jiro.png", name:"高尾二郎"},
+    {face:"スクリーンショット 2022-07-15 110858.png", name:"茗荷谷花子"},
     {face:"hanako.png", name:"茗荷谷花子"}
 ]
 
