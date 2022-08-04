@@ -33,8 +33,8 @@ function showResult(resp) {
   //n.remove(sn.childNodes);
 
   for (n of data.results.shop) {
-    let a = document.createElement('h2');//h2要素を作成(店舗名を代入するため)
-    let c = document.createElement('p');//p要素を作成(店の詳細を代入するため)
+    let a = document.createElement('h2');
+    let c = document.createElement('p');
     let d = document.createElement('p');
     let e = document.createElement('p');
     let f = document.createElement('p');
@@ -44,14 +44,14 @@ function showResult(resp) {
     //このメンバーに文字列を代入することで,p要素のテキストを設定できます
     //新しい要素は作ったあとに，その要素を DOM の木構造のどこかに追加しなくてはいけません
 
-    a.textContent = n.name;//a要素のテキストを設定
+    a.textContent = '【店舗名】 :  ' + n.name;
     c.textContent = '【アクセス】 : ' + n.access;
     d.textContent = '【住所】 : ' + n.address;
     e.textContent = '【営業日・時間・ラストオーダー等】 : ' + n.open;
     f.textContent = '【予算】 : ' + n.budget.average;
     g.textContent = '【キャッチ】 : ' + n.genre.catch;
 
-      sn.insertAdjacentElement('beforeend',a);//要素snの子要素の最後にaを追加
+      sn.insertAdjacentElement('beforeend',a);
       sn.insertAdjacentElement('beforeend',g);
       sn.insertAdjacentElement('beforeend',c);
       sn.insertAdjacentElement('beforeend',d);
