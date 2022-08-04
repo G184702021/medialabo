@@ -1,78 +1,51 @@
-/* General styles */
+p{
+  color:rgb(0, 0, 0);
+  margin-left: 20px;
+}
 
-html {
-    font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 13px;
-  }
-  
-  body {
-    width: 80em;
-    margin: 0 auto;
-    background-color: rgb(226, 241, 255);
-    background-image:url("https://woman-gourmet.com/wp-content/uploads/2020/09/67401020_464411737681238_7801512723988086784_o.jpg"),
-    url("https://woman-gourmet.com/wp-content/uploads/2020/09/67401020_464411737681238_7801512723988086784_o.jpg");
-    background-size: 40em,40em;
-    background-repeat:  no-repeat,no-repeat;
-    background-position:right center,left center;
-    
-  }
-    
-  /* Typography */
-  
+h1 {
+  position: senter;
+  padding: 0.5em;
+  background: rgb(206, 224, 140);
+  color: rgb(0, 0, 0);
+}
 
+h1::before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 15px transparent;
+  border-right: solid 20px rgb(149, 158, 155);
+}
 
-  strong {
-    background-color: rgb(202, 229, 255);
-    font-size: 1.5em;
-  }
-  p {
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5em;
-  }
-  
-  li {
-    width: 80%;
-    text-align: center;
-    padding: 0.5em 0;
-    background-color: rgb(255, 255, 255);
-    font-size: 1.5em;
-  }
-  
-  /*+++ more specific section styles +++*/
-  
-  /* header and footer */
+body {
+  background-color: rgb(252, 244, 223);
+}
 
-  header, footer {
-    background-color: rgb(222, 224, 140);
-    height: 10em;
-    padding: 6em;
-  }
-  
-  h1, footer p {
-    margin: 50px;
-  }
-  
-  h1 {
-    font-size: 4em;
-    background-color: rgb(206, 224, 140);
-    width: 80%;
-    text-align: center;
-    padding: 0.5em 0;
-  }
-  
-  h2 {
-    font-size: 3em;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    text-align: center;
-    padding: 0.5em 0;
-  }
-  /* main content */
-  
-  main {
-    padding: 2em;
-  }
-  
-  main p, main li {
-    line-height: 2;
-  }
+h2 {
+  display: flex;          /* フレックスボックスにする */
+  flex-direction: row;    /* 横向きに表示（column に変更すると縦向きに表示） */
+
+  width: 750px;
+  border: 1px solid gray;
+  padding: 5px 5px 5px 0;
+}
+
+/*h2 {
+  flex: 2;                 横幅2で表示 
+
+  background-color: cyan;
+  margin-left: 5px;
+}*/
+
+h2 {
+  flex: 1;                /* 横幅1で表示 */
+  background-color: rgb(206, 224, 140);
+  margin-left: 5px;
+}
+
+h2 {
+  color:rgb(0, 0, 0);
+}
